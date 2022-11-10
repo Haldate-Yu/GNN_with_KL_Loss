@@ -16,9 +16,11 @@ $ python gat.py --dataset [dataname][default=Cora] --runs 1[default=100] --epoch
 ### Added GATv2 - version 1.0.4
 
 the *kl loss* is mainly added in *train_eval.py*, with a simply addition after F.nll_loss(). 
+
 $$
 total\_loss = cl\_loss + \alpha_1 \cdot kl\_loss + \alpha_2 \cdot kl\_loss
 $$
+
 In terms of model implementation, we mainly look over *new_gat_layer.py*
 
 We adopt 2 layers' noises in this version, from layer1 and layer2. 
