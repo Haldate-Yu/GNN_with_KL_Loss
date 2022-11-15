@@ -238,6 +238,7 @@ class GATConv(MessagePassing):
 
         # split it into topk alpha & noise alpha, return x_j * topk alpha and noise alpha part
         perm = self.split_attn(alpha, topk)
+        # perm = self.split_attn_bottom(alpha, topk)
         topk_alpha = alpha * perm
         noise_alpha = alpha * ~perm
         # save for after use
@@ -275,6 +276,33 @@ class GATConv(MessagePassing):
         # transpose and stack in cols
         attn_mask = torch.stack(masks, dim=1)
         return attn_mask
+
+    # with a bottomk values as a hyper-parameter, default=1
+    def split_attn_bottom(self, alpha, bottomk=1):
+        # with no grad
+        attn = alpha.detach()
+        # for multi head
+        masks = []
+        
+        for i in range(attn.size(1)):
+            # convert to tensor adj
+            adj = SparseTensor(row=self.edge_index[0], col=self.edge_index[1], value=attn[:, i],
+                               sparse_sizes=(self.num_nodes, self.num_nodes)).to_dense()
+            zero_values = -9e15
+            reverse_adj = torch.where(-adj == 0, zero_values, -adj)
+            
+            # select bottomk by cols
+            values, idx = reverse_adj.topk(bottomk, 1)
+            bottomk_adj = torch.zeros_like(reverse_adj).scatter_(1, idx, values)
+            
+            # get new edge_weights
+            row, col = self.edge_index
+            edge_weights = bottomk_adj[row, col]
+            mask = edge_weights == attn[:, i]
+            masks.append(mask)
+        # transpose and stack in cols
+        attn_mask = torch.stack(masks, dim=1)
+        return ~attn_mask
 
     def __repr__(self):
         return '{}({}, {}, heads={})'.format(self.__class__.__name__,
