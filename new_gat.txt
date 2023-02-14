@@ -1,0 +1,756 @@
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.0, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2767 ± 0.009, 
+Duration: 70.94915008544922
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.0, attn topk=1
+ Val Loss: 1.5521, 
+Test Acc: 0.2787 ± 0.009, 
+Duration: 62.985267639160156
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.0, attn topk=1
+ Val Loss: 1.5524, 
+Test Acc: 0.2788 ± 0.007, 
+Duration: 63.56261444091797
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.0, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2794 ± 0.006, 
+Duration: 103.46775817871094
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.0, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2798 ± 0.009, 
+Duration: 102.83485412597656
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2782 ± 0.007, 
+Duration: 103.81101989746094
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.0, attn topk=20
+ Val Loss: 1.5499, 
+Test Acc: 0.2796 ± 0.008, 
+Duration: 109.04658508300781
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.0, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2806 ± 0.007, 
+Duration: 108.07450866699219
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.0, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2799 ± 0.008, 
+Duration: 107.64599609375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.01, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2780 ± 0.010, 
+Duration: 62.098533630371094
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.01, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2758 ± 0.008, 
+Duration: 62.61354446411133
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.01, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2774 ± 0.009, 
+Duration: 62.31397247314453
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.01, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2791 ± 0.007, 
+Duration: 105.9953384399414
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.01, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2794 ± 0.006, 
+Duration: 104.22337341308594
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.01, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2819 ± 0.008, 
+Duration: 104.2907485961914
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.01, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2781 ± 0.008, 
+Duration: 108.68534088134766
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.01, attn topk=20
+ Val Loss: 1.5502, 
+Test Acc: 0.2792 ± 0.008, 
+Duration: 108.99760437011719
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.01, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2785 ± 0.009, 
+Duration: 106.9622802734375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.1, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2799 ± 0.009, 
+Duration: 62.47163009643555
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.1, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2783 ± 0.009, 
+Duration: 62.83385467529297
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.1, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2780 ± 0.009, 
+Duration: 62.1085090637207
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.1, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2813 ± 0.006, 
+Duration: 103.77587890625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.1, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2786 ± 0.008, 
+Duration: 103.33241271972656
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.1, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2808 ± 0.009, 
+Duration: 103.50773620605469
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=0.1, attn topk=20
+ Val Loss: 1.5499, 
+Test Acc: 0.2794 ± 0.008, 
+Duration: 110.71894836425781
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=0.1, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2792 ± 0.008, 
+Duration: 109.03529357910156
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=0.1, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2788 ± 0.008, 
+Duration: 107.80657958984375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=1.0, attn topk=1
+ Val Loss: 1.5528, 
+Test Acc: 0.2776 ± 0.010, 
+Duration: 62.09502410888672
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=1.0, attn topk=1
+ Val Loss: 1.5527, 
+Test Acc: 0.2773 ± 0.008, 
+Duration: 62.98667526245117
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=1.0, attn topk=1
+ Val Loss: 1.5529, 
+Test Acc: 0.2768 ± 0.008, 
+Duration: 63.326637268066406
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=1.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2806 ± 0.007, 
+Duration: 103.46488189697266
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=1.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2803 ± 0.009, 
+Duration: 105.0192642211914
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=1.0, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2802 ± 0.008, 
+Duration: 106.64753723144531
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.0, alpha2=1.0, attn topk=20
+ Val Loss: 1.5499, 
+Test Acc: 0.2807 ± 0.008, 
+Duration: 108.2232666015625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.0, alpha2=1.0, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2788 ± 0.009, 
+Duration: 108.72416687011719
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.0, alpha2=1.0, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2809 ± 0.009, 
+Duration: 108.0430679321289
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.0, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2774 ± 0.007, 
+Duration: 63.20832443237305
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.0, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2786 ± 0.008, 
+Duration: 61.97088623046875
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.0, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2764 ± 0.009, 
+Duration: 62.3996467590332
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.0, attn topk=10
+ Val Loss: 1.5497, 
+Test Acc: 0.2808 ± 0.007, 
+Duration: 104.7994384765625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.0, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2822 ± 0.008, 
+Duration: 105.90089416503906
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.0, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2812 ± 0.008, 
+Duration: 103.53375244140625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.0, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2773 ± 0.007, 
+Duration: 110.53108978271484
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.0, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2799 ± 0.009, 
+Duration: 108.53956604003906
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.0, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2797 ± 0.009, 
+Duration: 108.87907409667969
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.01, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2773 ± 0.008, 
+Duration: 63.49738693237305
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.01, attn topk=1
+ Val Loss: 1.5524, 
+Test Acc: 0.2772 ± 0.009, 
+Duration: 62.67375564575195
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.01, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2783 ± 0.009, 
+Duration: 62.57185745239258
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.01, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2784 ± 0.007, 
+Duration: 103.8203353881836
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.01, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2790 ± 0.009, 
+Duration: 106.15728759765625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.01, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2790 ± 0.008, 
+Duration: 103.36383056640625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.01, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2811 ± 0.008, 
+Duration: 107.7358169555664
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.01, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2789 ± 0.007, 
+Duration: 108.06919860839844
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.01, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2790 ± 0.007, 
+Duration: 108.98915100097656
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.1, attn topk=1
+ Val Loss: 1.5524, 
+Test Acc: 0.2787 ± 0.009, 
+Duration: 62.02008819580078
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.1, attn topk=1
+ Val Loss: 1.5524, 
+Test Acc: 0.2766 ± 0.009, 
+Duration: 61.84577560424805
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.1, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2774 ± 0.009, 
+Duration: 62.230140686035156
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.1, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2777 ± 0.007, 
+Duration: 104.14649963378906
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.1, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2816 ± 0.010, 
+Duration: 104.56439208984375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.1, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2807 ± 0.010, 
+Duration: 104.83308410644531
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=0.1, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2784 ± 0.009, 
+Duration: 108.3221664428711
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=0.1, attn topk=20
+ Val Loss: 1.5499, 
+Test Acc: 0.2762 ± 0.008, 
+Duration: 107.4018783569336
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=0.1, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2774 ± 0.008, 
+Duration: 108.0677261352539
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=1.0, attn topk=1
+ Val Loss: 1.5528, 
+Test Acc: 0.2783 ± 0.008, 
+Duration: 64.18199157714844
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=1.0, attn topk=1
+ Val Loss: 1.5528, 
+Test Acc: 0.2775 ± 0.008, 
+Duration: 62.18245315551758
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=1.0, attn topk=1
+ Val Loss: 1.5529, 
+Test Acc: 0.2762 ± 0.008, 
+Duration: 63.482879638671875
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=1.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2793 ± 0.007, 
+Duration: 103.56172180175781
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=1.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2804 ± 0.009, 
+Duration: 104.74591064453125
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=1.0, attn topk=10
+ Val Loss: 1.5501, 
+Test Acc: 0.2794 ± 0.008, 
+Duration: 104.43782043457031
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.01, alpha2=1.0, attn topk=20
+ Val Loss: 1.5499, 
+Test Acc: 0.2797 ± 0.008, 
+Duration: 111.99105072021484
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.01, alpha2=1.0, attn topk=20
+ Val Loss: 1.5502, 
+Test Acc: 0.2787 ± 0.006, 
+Duration: 110.95744323730469
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.01, alpha2=1.0, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2814 ± 0.008, 
+Duration: 108.03312683105469
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.0, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2796 ± 0.008, 
+Duration: 62.299224853515625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.0, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2780 ± 0.009, 
+Duration: 61.47890090942383
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.0, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2794 ± 0.007, 
+Duration: 63.52105712890625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.0, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2803 ± 0.008, 
+Duration: 104.69193267822266
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2805 ± 0.009, 
+Duration: 103.46028137207031
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.0, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2806 ± 0.010, 
+Duration: 103.07230377197266
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.0, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2793 ± 0.007, 
+Duration: 110.62571716308594
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.0, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2787 ± 0.008, 
+Duration: 108.2391357421875
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.0, attn topk=20
+ Val Loss: 1.5499, 
+Test Acc: 0.2811 ± 0.008, 
+Duration: 107.24360656738281
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.01, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2772 ± 0.009, 
+Duration: 63.10780715942383
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.01, attn topk=1
+ Val Loss: 1.5524, 
+Test Acc: 0.2777 ± 0.008, 
+Duration: 62.508094787597656
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.01, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2777 ± 0.008, 
+Duration: 62.90729904174805
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.01, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2798 ± 0.008, 
+Duration: 105.8115234375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.01, attn topk=10
+ Val Loss: 1.5501, 
+Test Acc: 0.2809 ± 0.011, 
+Duration: 102.71722412109375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.01, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2801 ± 0.007, 
+Duration: 104.41810607910156
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.01, attn topk=20
+ Val Loss: 1.5502, 
+Test Acc: 0.2788 ± 0.008, 
+Duration: 106.86158752441406
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.01, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2783 ± 0.008, 
+Duration: 107.42718505859375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.01, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2797 ± 0.007, 
+Duration: 108.23429107666016
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.1, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2772 ± 0.008, 
+Duration: 62.261207580566406
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.1, attn topk=1
+ Val Loss: 1.5524, 
+Test Acc: 0.2767 ± 0.009, 
+Duration: 61.85471725463867
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.1, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2786 ± 0.008, 
+Duration: 62.572898864746094
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.1, attn topk=10
+ Val Loss: 1.5500, 
+Test Acc: 0.2796 ± 0.008, 
+Duration: 103.7061538696289
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.1, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2811 ± 0.008, 
+Duration: 104.53849029541016
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.1, attn topk=10
+ Val Loss: 1.5497, 
+Test Acc: 0.2805 ± 0.009, 
+Duration: 104.16129302978516
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=0.1, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2796 ± 0.008, 
+Duration: 108.1945571899414
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=0.1, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2798 ± 0.009, 
+Duration: 107.8198471069336
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=0.1, attn topk=20
+ Val Loss: 1.5502, 
+Test Acc: 0.2789 ± 0.008, 
+Duration: 109.2375259399414
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=1.0, attn topk=1
+ Val Loss: 1.5528, 
+Test Acc: 0.2794 ± 0.007, 
+Duration: 62.50140380859375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=1.0, attn topk=1
+ Val Loss: 1.5527, 
+Test Acc: 0.2775 ± 0.010, 
+Duration: 61.938026428222656
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=1.0, attn topk=1
+ Val Loss: 1.5528, 
+Test Acc: 0.2777 ± 0.007, 
+Duration: 61.664649963378906
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=1.0, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2794 ± 0.008, 
+Duration: 104.95458984375
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=1.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2806 ± 0.009, 
+Duration: 105.02299499511719
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=1.0, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2837 ± 0.011, 
+Duration: 105.57698822021484
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=0.1, alpha2=1.0, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2802 ± 0.008, 
+Duration: 107.39825439453125
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=0.1, alpha2=1.0, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2799 ± 0.009, 
+Duration: 107.3860855102539
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=0.1, alpha2=1.0, attn topk=20
+ Val Loss: 1.5499, 
+Test Acc: 0.2806 ± 0.008, 
+Duration: 108.01603698730469
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=1.0, alpha2=0.0, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2784 ± 0.009, 
+Duration: 62.69061279296875
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=1.0, alpha2=0.0, attn topk=1
+ Val Loss: 1.5522, 
+Test Acc: 0.2776 ± 0.009, 
+Duration: 64.03970336914062
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=1.0, alpha2=0.0, attn topk=1
+ Val Loss: 1.5521, 
+Test Acc: 0.2789 ± 0.009, 
+Duration: 61.93291473388672
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=1.0, alpha2=0.0, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2786 ± 0.008, 
+Duration: 105.43266296386719
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=1.0, alpha2=0.0, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2829 ± 0.009, 
+Duration: 104.24165344238281
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=1.0, alpha2=0.0, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2801 ± 0.008, 
+Duration: 104.8072509765625
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=1.0, alpha2=0.0, attn topk=20
+ Val Loss: 1.5501, 
+Test Acc: 0.2783 ± 0.009, 
+Duration: 108.1166763305664
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=1.0, alpha2=0.0, attn topk=20
+ Val Loss: 1.5502, 
+Test Acc: 0.2802 ± 0.009, 
+Duration: 107.68990325927734
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=1.0, alpha2=0.0, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2801 ± 0.007, 
+Duration: 107.74105072021484
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=1.0, alpha2=0.01, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2782 ± 0.008, 
+Duration: 62.698036193847656
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=1.0, alpha2=0.01, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2780 ± 0.010, 
+Duration: 62.28010177612305
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=1.0, alpha2=0.01, attn topk=1
+ Val Loss: 1.5523, 
+Test Acc: 0.2764 ± 0.008, 
+Duration: 61.89957809448242
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=1.0, alpha2=0.01, attn topk=10
+ Val Loss: 1.5498, 
+Test Acc: 0.2809 ± 0.010, 
+Duration: 105.184326171875
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=1.0, alpha2=0.01, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2788 ± 0.008, 
+Duration: 103.65706634521484
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=1.0, alpha2=0.01, attn topk=10
+ Val Loss: 1.5499, 
+Test Acc: 0.2809 ± 0.007, 
+Duration: 103.52207946777344
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=8, alpha1=1.0, alpha2=0.01, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2778 ± 0.008, 
+Duration: 109.7053451538086
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=16, alpha1=1.0, alpha2=0.01, attn topk=20
+ Val Loss: 1.5502, 
+Test Acc: 0.2790 ± 0.007, 
+Duration: 107.9404067993164
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ KL Params:  mlp hidden=32, alpha1=1.0, alpha2=0.01, attn topk=20
+ Val Loss: 1.5500, 
+Test Acc: 0.2789 ± 0.009, 
+Duration: 109.7004165649414

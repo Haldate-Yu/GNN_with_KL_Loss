@@ -4,6 +4,7 @@ import torch
 from torch.nn import Linear
 import torch.nn.functional as F
 from datasets import get_planetoid_dataset, get_amazon_dataset
+from load_data import load_data
 from logger import logger
 from train_eval import random_planetoid_splits, run
 
@@ -12,7 +13,9 @@ from new_gat_layer import GATConv
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str, required=True)
 parser.add_argument('--random_splits', type=bool, default=False)
-parser.add_argument('--runs', type=int, default=100)
+parser.add_argument('--splits', type=str, default="geom-gcn")
+parser.add_argument('--seed', type=int, default=42)
+parser.add_argument('--runs', type=int, default=10)
 parser.add_argument('--epochs', type=int, default=1000)
 parser.add_argument('--lr', type=float, default=0.005)
 parser.add_argument('--weight_decay', type=float, default=0.0005)
@@ -67,13 +70,15 @@ class Net(torch.nn.Module):
         return F.log_softmax(x, dim=1), F.log_softmax(noise1, dim=1), F.log_softmax(noise2, dim=1)
 
 
-if args.dataset in ['Cora', 'Citeseer', 'Pubmed']:
-    dataset = get_planetoid_dataset(args.dataset, args.normalize_features)
-elif args.dataset in ['Computers', 'Photo']:
-    dataset = get_amazon_dataset(args.dataset, args.normalize_features)
+# if args.dataset in ['Cora', 'Citeseer', 'Pubmed']:
+#     dataset = get_planetoid_dataset(args.dataset, args.normalize_features)
+# elif args.dataset in ['Computers', 'Photo']:
+#     dataset = get_amazon_dataset(args.dataset, args.normalize_features)
+
+dataset = load_data(args)
 
 permute_masks = random_planetoid_splits if args.random_splits else None
-loss, acc, duration = run(dataset, Net(dataset), args.runs, args.epochs, args.lr, args.weight_decay,
+loss, acc, duration = run(args, Net(dataset), args.runs, args.epochs, args.lr, args.weight_decay,
                           args.early_stopping, permute_masks,
                           kl_loss=args.kl_loss, kl_alpha1=args.kl_alpha1, kl_alpha2=args.kl_alpha2)
 logger(model_name='new_gat', loss=loss, acc=acc, duration=duration, args=args)

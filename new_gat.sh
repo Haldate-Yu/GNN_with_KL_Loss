@@ -1,20 +1,20 @@
 lr=0.005
 wd=0.0005
-output_heads=1
+output_heads=8
 
 
 
-for dat in Computers Photo
+for dat in Actor
 do
-    for hid in 8 16 32 64 128
+    for hid in 8 16 32
     do
-        for alpha1 in 0 0.01 0.05 0.1 0.5 1.0
+        for alpha1 in 0 0.01 0.1 1.0
         do
-            for alpha2 in 0 0.01 0.05 0.1 0.5 1.0
+            for alpha2 in 0 0.01 0.1 1.0
             do
-                for topk in 1 2 5 10 20
+                for topk in 1 10 20
                 do
-                    for hid_mlp in 8 16 32 64 128
+                    for hid_mlp in 8 16 32
                     do
                         python new_gat.py --dataset=$dat --lr=$lr --weight_decay=$wd --hidden $hid --output_heads $output_heads --kl_loss True --kl_alpha1 $alpha1 --kl_alpha2 $alpha2 --attn_topk $topk --hidden_mlp $hid_mlp
                     done

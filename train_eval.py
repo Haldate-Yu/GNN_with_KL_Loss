@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 from torch import tensor
 from torch.optim import Adam
-
+from load_data import load_data
 # from torch_geometric.utils import index_to_mask
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -41,11 +41,13 @@ def random_planetoid_splits(data, num_classes):
     return data
 
 
-def run(dataset, model, runs, epochs, lr, weight_decay, early_stopping,
+def run(args, model, runs, epochs, lr, weight_decay, early_stopping,
         permute_masks=None, logger=None, kl_loss=False, kl_alpha1=0.01, kl_alpha2=0.02):
     val_losses, accs, durations = [], [], []
     for _ in range(runs):
-        data = dataset[0]
+        
+        args.seed += _
+        data = load_data(args)
 
         if permute_masks is not None:
             data = permute_masks(data, dataset.num_classes)

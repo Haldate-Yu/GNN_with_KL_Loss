@@ -1,0 +1,15 @@
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=8
+ Val Loss: 1.5527, 
+Test Acc: 0.2761 ± 0.006, 
+Duration: 4.045540809631348
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=16
+ Val Loss: 1.5520, 
+Test Acc: 0.2755 ± 0.009, 
+Duration: 12.1421537399292
+==========
+ Params:  lr=0.005, wd=0.0005, epochs=1000, hidden=32
+ Val Loss: 1.5518, 
+Test Acc: 0.2789 ± 0.008, 
+Duration: 18.18276596069336
