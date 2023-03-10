@@ -1,16 +1,16 @@
 import torch
+import torch.nn as nn
 from torch_geometric.nn import GCNConv
 from torch_geometric.nn import GraphConv, TopKPooling
 from torch_geometric.nn import global_mean_pool as gap, global_max_pool as gmp
 import torch.nn.functional as F
 from layers import SAGPool
-
-
+from weight_init import trunc_normal_
 
 
 
 class Net(torch.nn.Module):
-    def __init__(self,args):
+    def __init__(self, args):
         super(Net, self).__init__()
         self.args = args
         self.num_features = args.num_features
@@ -28,22 +28,32 @@ class Net(torch.nn.Module):
 
         self.lin1 = torch.nn.Linear(self.nhid*2, self.nhid)
         self.lin2 = torch.nn.Linear(self.nhid, self.nhid//2)
-        self.lin3 = torch.nn.Linear(self.nhid//2, self. num_classes)
+        self.lin3 = torch.nn.Linear(self.nhid//2, self.num_classes)
+
+        # additional cls token
+        self.cls = nn.Parameter(torch.zeros(1, 1, args.hid))
+        trunc_normal_(self.cls, std=.02)
+
 
     def forward(self, data):
         x, edge_index, batch = data.x, data.edge_index, data.batch
+        # cls_token = self.cls.expand(x.shape[0], -1, -1)
+        # x = torch.cat((cls_token, x), dim=1)
 
         x = F.relu(self.conv1(x, edge_index))
         x, edge_index, _, batch, _ = self.pool1(x, edge_index, None, batch)
-        x1 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        # x1 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        # cls1
 
         x = F.relu(self.conv2(x, edge_index))
         x, edge_index, _, batch, _ = self.pool2(x, edge_index, None, batch)
-        x2 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        # x2 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        # cls2
 
         x = F.relu(self.conv3(x, edge_index))
         x, edge_index, _, batch, _ = self.pool3(x, edge_index, None, batch)
-        x3 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        # x3 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        # cls3
 
         x = x1 + x2 + x3
 
@@ -53,5 +63,3 @@ class Net(torch.nn.Module):
         x = F.log_softmax(self.lin3(x), dim=-1)
 
         return x
-
-    
