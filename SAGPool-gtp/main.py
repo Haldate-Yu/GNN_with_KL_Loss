@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--seed', type=int, default=777,
                     help='seed')
-parser.add_argument('--batch_size', type=int, default=128,
+parser.add_argument('--batch_size', type=int, default=64,
                     help='batch size')
 parser.add_argument('--lr', type=float, default=0.0005,
                     help='learning rate')
@@ -23,9 +23,9 @@ parser.add_argument('--pooling_ratio', type=float, default=0.5,
                     help='pooling ratio')
 parser.add_argument('--dropout_ratio', type=float, default=0.5,
                     help='dropout ratio')
-parser.add_argument('--dataset', type=str, default='DD',
+parser.add_argument('--dataset', type=str, default='MUTAG',
                     help='DD/PROTEINS/NCI1/NCI109/Mutagenicity')
-parser.add_argument('--epochs', type=int, default=100000,
+parser.add_argument('--epochs', type=int, default=1,
                     help='maximum number of epochs')
 parser.add_argument('--patience', type=int, default=50,
                     help='patience for earlystopping')
@@ -78,15 +78,15 @@ for epoch in range(args.epochs):
         data = data.to(args.device)
         out = model(data)
         loss = F.nll_loss(out, data.y)
-        print("Training loss:{}".format(loss.item()))
+        # print("Training loss:{}".format(loss.item()))
         loss.backward()
         optimizer.step()
         optimizer.zero_grad()
     val_acc,val_loss = test(model,val_loader)
-    print("Validation loss:{}\taccuracy:{}".format(val_loss,val_acc))
+    # print("Validation loss:{}\taccuracy:{}".format(val_loss,val_acc))
     if val_loss < min_loss:
         torch.save(model.state_dict(),'latest.pth')
-        print("Model saved at epoch{}".format(epoch))
+        # print("Model saved at epoch{}".format(epoch))
         min_loss = val_loss
         patience = 0
     else:

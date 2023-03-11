@@ -19,7 +19,9 @@ class Net(torch.nn.Module):
         self.pooling_ratio = args.pooling_ratio
         self.dropout_ratio = args.dropout_ratio
         
-        self.conv1 = GCNConv(self.num_features, self.nhid)
+        self.lin_ini = torch.nn.Linear(self.num_features, self.nhid)
+
+        self.conv1 = GCNConv(self.nhid, self.nhid)
         self.pool1 = SAGPool(self.nhid, ratio=self.pooling_ratio)
         self.conv2 = GCNConv(self.nhid, self.nhid)
         self.pool2 = SAGPool(self.nhid, ratio=self.pooling_ratio)
@@ -31,30 +33,38 @@ class Net(torch.nn.Module):
         self.lin3 = torch.nn.Linear(self.nhid//2, self.num_classes)
 
         # additional cls token
-        self.cls = nn.Parameter(torch.zeros(1, 1, args.hid))
+        self.cls = nn.Parameter(torch.zeros(1, args.nhid))
         trunc_normal_(self.cls, std=.02)
 
 
     def forward(self, data):
         x, edge_index, batch = data.x, data.edge_index, data.batch
-        # cls_token = self.cls.expand(x.shape[0], -1, -1)
-        # x = torch.cat((cls_token, x), dim=1)
+        # added as a virtual node for graph-0 in this batch
+        cls_token = self.cls
+        cls_batch = torch.tensor([0]).cuda()
+        
+        x = self.lin_ini(x)
+        x = torch.cat((cls_token, x), dim=0)
+        batch = torch.cat((cls_batch, batch), dim=0)
 
         x = F.relu(self.conv1(x, edge_index))
         x, edge_index, _, batch, _ = self.pool1(x, edge_index, None, batch)
-        # x1 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        x1 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
         # cls1
+        cls1 = x1[0:1]
 
         x = F.relu(self.conv2(x, edge_index))
         x, edge_index, _, batch, _ = self.pool2(x, edge_index, None, batch)
-        # x2 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        x2 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
         # cls2
-
+        cls2 = x2[0:1]
+        
         x = F.relu(self.conv3(x, edge_index))
         x, edge_index, _, batch, _ = self.pool3(x, edge_index, None, batch)
-        # x3 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
+        x3 = torch.cat([gmp(x, batch), gap(x, batch)], dim=1)
         # cls3
-
+        cls3 = x3[0:1]
+        
         x = x1 + x2 + x3
 
         x = F.relu(self.lin1(x))
