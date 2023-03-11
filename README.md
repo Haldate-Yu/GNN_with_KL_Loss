@@ -30,3 +30,20 @@ We then calculate them both through kl loss, using a percentage alpha setting as
 For result saving, we add **logger.py**, which can log the results into 'results/' directory
 
 In this version, we implement GATv2 model, and its variant with our kl loss.
+
+### Experiments
+
+|                     |     Actor      |   Chameleon    |    Cornell     |    Squirrel    |     Texas      |   Wisconsin    |
+| :-----------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+|      base-GAT       | 0.2757 ± 0.008 | 0.4355 ± 0.022 | 0.4351 ± 0.071 | 0.2729 ± 0.016 | 0.5865 ± 0.042 | 0.5235 ± 0.026 |
+| kl-GAT (maybe best) | 0.2828 ± 0.008 | 0.4386 ± 0.023 | 0.4892 ± 0.052 | 0.2750 ± 0.014 | 0.6297 ± 0.058 | 0.5451 ± 0.040 |
+
+### Settings
+
+- Runs: 10
+- Epochs: 1000
+- Learning Rate: 0.005
+- Weight Decay: 0.0005
+- Hidden Dims: 8
+- Model Layers: 2
+- Multi-heads: 8
